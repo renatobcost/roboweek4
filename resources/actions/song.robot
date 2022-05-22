@@ -1,7 +1,7 @@
 
 *Settings*
 
-Documentation       Ações da página de album  
+Documentation       Ações de tocar uma música no parodify
 
 *Keywords*
 

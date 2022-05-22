@@ -1,7 +1,11 @@
 
 *Settings*
 
-Documentation       Ações da página de login   
+Documentation       Ações de autenticação/autorização 
+
+*Variables*
+
+${LOGOUT_LINK}      css=a[href$=sign_out]
 
 *Keywords*
 
@@ -11,7 +15,7 @@ Open Login
     #Open Browser   http://parodify.herokuapp.com/users/sign_in     chromium
     
     #Execução no modo headless
-    New Page        http://parodify.herokuapp.com/users/sign_in   
+    New Page        http://parodify.herokuapp.com/users/sign_in    
 
 Login With
     
@@ -24,3 +28,12 @@ Login With
 Alert Should Be
     
     Get Text        css=.is-danger .message-body        equal       Oops! Email e/ou senha incorretos.
+
+Logout Icon Should Be Visible 
+
+    Wait For Elements State         ${LOGOUT_LINK}      visible     10
+
+Do Logout
+
+    Click                           ${LOGOUT_LINK}
+

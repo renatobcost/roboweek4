@@ -3,11 +3,19 @@
 
 Documentation       Ações da página home logada   
 
+*Variables*
+
+${LOGOUT_LINK}                      css=a[href$=sign_out]
+
 *Keywords*
 
 Logout Icon Should Be Visible 
 
-    Wait For Elements State         css=a[href$=sign_out]       visible         10
+    Wait For Elements State         ${LOGOUT_LINK}       visible         10
+
+Do Logout
+
+    Click                           ${LOGOUT_LINK}
 
 Go To Search Page
     
