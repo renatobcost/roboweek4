@@ -119,9 +119,9 @@ Para executar o projeto seguindo o modelo híbrido faça a seguinte edição no 
 ```js
 
 # Execução App Actions pura
-#Resource        actions/auth.robot
-#Resource        actions/nav.robot
-#Resource        actions/song.robot
+Resource        actions/auth.robot
+Resource        actions/nav.robot
+Resource        actions/song.robot
 
 ```
 
